@@ -48,6 +48,11 @@
 		FA12707627994FCE00D45FB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707527994FCE00D45FB4 /* Constants.swift */; };
 		FA1270792799585600D45FB4 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270782799585600D45FB4 /* HeroCell.swift */; };
 		FA12707B27995DC600D45FB4 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */; };
+		FA12709B2799D71800D45FB4 /* HeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270962799D71800D45FB4 /* HeroDetailPresenter.swift */; };
+		FA12709C2799D71800D45FB4 /* HeroDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270972799D71800D45FB4 /* HeroDetailRouter.swift */; };
+		FA12709D2799D71800D45FB4 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */; };
+		FA12709E2799D71800D45FB4 /* HeroDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */; };
+		FA12709F2799D71800D45FB4 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12709A2799D71800D45FB4 /* HeroDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,11 @@
 		FA12707527994FCE00D45FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA1270782799585600D45FB4 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		FA1270962799D71800D45FB4 /* HeroDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailPresenter.swift; sourceTree = "<group>"; };
+		FA1270972799D71800D45FB4 /* HeroDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailRouter.swift; sourceTree = "<group>"; };
+		FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailInteractor.swift; sourceTree = "<group>"; };
+		FA12709A2799D71800D45FB4 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +214,7 @@
 		FA126FB62789A3B300D45FB4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FA12708B2799BAC300D45FB4 /* HeroDetail */,
 				FA12706327993D9300D45FB4 /* Hero */,
 				FA126FB72789A3C300D45FB4 /* Menu */,
 			);
@@ -385,6 +396,19 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		FA12708B2799BAC300D45FB4 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FA12709A2799D71800D45FB4 /* HeroDetailView.swift */,
+				FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */,
+				FA1270962799D71800D45FB4 /* HeroDetailPresenter.swift */,
+				FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */,
+				FA1270972799D71800D45FB4 /* HeroDetailRouter.swift */,
+			);
+			name = HeroDetail;
+			path = Hero/HeroDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -504,6 +528,7 @@
 				FA126FEC278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift in Sources */,
 				FA126FDB278AC58400D45FB4 /* CircularCarouselDelegate.swift in Sources */,
 				FA126FE4278ACD3C00D45FB4 /* UITableView+Extension.swift in Sources */,
+				FA12709E2799D71800D45FB4 /* HeroDetailInteractor.swift in Sources */,
 				FA12705F2799383E00D45FB4 /* HeroViewController.swift in Sources */,
 				FA126FE0278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift in Sources */,
 				FA126FA22789993400D45FB4 /* MenuViewController.swift in Sources */,
@@ -517,6 +542,8 @@
 				FA126FD6278AC58400D45FB4 /* CircularCarousel+Animation.swift in Sources */,
 				FA12707B27995DC600D45FB4 /* UIImageView+Extension.swift in Sources */,
 				FA126FD5278AC58400D45FB4 /* CircularCarousel.swift in Sources */,
+				FA12709B2799D71800D45FB4 /* HeroDetailPresenter.swift in Sources */,
+				FA12709D2799D71800D45FB4 /* HeroDetailViewController.swift in Sources */,
 				FA126FBE2789AA2700D45FB4 /* Then+Extension.swift in Sources */,
 				FA126FC72789B10000D45FB4 /* MenuHeaderCell.swift in Sources */,
 				FA126FDA278AC58400D45FB4 /* CircularCarouselDataSource.swift in Sources */,
@@ -529,10 +556,12 @@
 				FA1270612799383E00D45FB4 /* HeroView.swift in Sources */,
 				FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */,
 				FA126FE6278ADF6C00D45FB4 /* UICollectionView+Extension.swift in Sources */,
+				FA12709F2799D71800D45FB4 /* HeroDetailView.swift in Sources */,
 				FA1270792799585600D45FB4 /* HeroCell.swift in Sources */,
 				FA126FA02789993400D45FB4 /* SceneDelegate.swift in Sources */,
 				FA126FD8278AC58400D45FB4 /* CircularCarousel+Gesture.swift in Sources */,
 				FA12705E2799383E00D45FB4 /* HeroRouter.swift in Sources */,
+				FA12709C2799D71800D45FB4 /* HeroDetailRouter.swift in Sources */,
 				FA126FC22789AAA200D45FB4 /* MenuViewController+TableView.swift in Sources */,
 				FA126FE8278AF3EA00D45FB4 /* NSObject+Extension.swift in Sources */,
 				FA12705D2799383E00D45FB4 /* HeroPresenter.swift in Sources */,
