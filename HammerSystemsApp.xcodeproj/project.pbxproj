@@ -7,23 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75082229D50B34B8D55AF77F /* Pods_HammerSystemsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13352CFC3DCE8E25EC39F2D3 /* Pods_HammerSystemsApp.framework */; };
 		FA126F9E2789993400D45FB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126F9D2789993400D45FB4 /* AppDelegate.swift */; };
 		FA126FA02789993400D45FB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126F9F2789993400D45FB4 /* SceneDelegate.swift */; };
-		FA126FA22789993400D45FB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FA12789993400D45FB4 /* ViewController.swift */; };
-		FA126FA52789993400D45FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA126FA32789993400D45FB4 /* Main.storyboard */; };
+		FA126FA22789993400D45FB4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FA12789993400D45FB4 /* MenuViewController.swift */; };
 		FA126FA72789993500D45FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA126FA62789993500D45FB4 /* Assets.xcassets */; };
 		FA126FAA2789993500D45FB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA126FA82789993500D45FB4 /* LaunchScreen.storyboard */; };
+		FA126FBE2789AA2700D45FB4 /* Then+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FBD2789AA2700D45FB4 /* Then+Extension.swift */; };
+		FA126FC22789AAA200D45FB4 /* MenuViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FC12789AAA200D45FB4 /* MenuViewController+TableView.swift */; };
+		FA126FC52789AB9D00D45FB4 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FC42789AB9D00D45FB4 /* MenuCell.swift */; };
+		FA126FC72789B10000D45FB4 /* MenuHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FC62789B10000D45FB4 /* MenuHeaderCell.swift */; };
+		FA126FC92789B64B00D45FB4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FC82789B64B00D45FB4 /* Menu.swift */; };
+		FA126FD5278AC58400D45FB4 /* CircularCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FD4278AC58400D45FB4 /* CircularCarousel.swift */; };
+		FA126FD6278AC58400D45FB4 /* CircularCarousel+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FD0278AC58400D45FB4 /* CircularCarousel+Animation.swift */; };
+		FA126FD7278AC58400D45FB4 /* CircularCarousel+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FD3278AC58400D45FB4 /* CircularCarousel+Loader.swift */; };
+		FA126FD8278AC58400D45FB4 /* CircularCarousel+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FCD278AC58300D45FB4 /* CircularCarousel+Gesture.swift */; };
+		FA126FD9278AC58400D45FB4 /* CircularCarousel+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FD1278AC58400D45FB4 /* CircularCarousel+Layout.swift */; };
+		FA126FDA278AC58400D45FB4 /* CircularCarouselDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FD2278AC58400D45FB4 /* CircularCarouselDataSource.swift */; };
+		FA126FDB278AC58400D45FB4 /* CircularCarouselDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FCF278AC58300D45FB4 /* CircularCarouselDelegate.swift */; };
+		FA126FDC278AC58400D45FB4 /* CircularCarousel+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FCE278AC58300D45FB4 /* CircularCarousel+Scroll.swift */; };
+		FA126FE0278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FDF278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift */; };
+		FA126FE2278AC84000D45FB4 /* MenuBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FE1278AC84000D45FB4 /* MenuBannerView.swift */; };
+		FA126FE4278ACD3C00D45FB4 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FE3278ACD3C00D45FB4 /* UITableView+Extension.swift */; };
+		FA126FE6278ADF6C00D45FB4 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FE5278ADF6C00D45FB4 /* UICollectionView+Extension.swift */; };
+		FA126FE8278AF3EA00D45FB4 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FE7278AF3EA00D45FB4 /* NSObject+Extension.swift */; };
+		FA126FEA278AFA3600D45FB4 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FE9278AFA3600D45FB4 /* TagCollectionCell.swift */; };
+		FA126FEC278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FEB278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift */; };
+		FA126FEE278C007400D45FB4 /* MenuViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA126FED278C007400D45FB4 /* MenuViewController+ScrollView.swift */; };
+		FA12705D2799383E00D45FB4 /* HeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270572799383E00D45FB4 /* HeroPresenter.swift */; };
+		FA12705E2799383E00D45FB4 /* HeroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270582799383E00D45FB4 /* HeroRouter.swift */; };
+		FA12705F2799383E00D45FB4 /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270592799383E00D45FB4 /* HeroViewController.swift */; };
+		FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12705A2799383E00D45FB4 /* HeroInteractor.swift */; };
+		FA1270612799383E00D45FB4 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12705B2799383E00D45FB4 /* HeroView.swift */; };
+		FA12706627993FFD00D45FB4 /* HeroViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */; };
+		FA1270682799459600D45FB4 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270672799459600D45FB4 /* HeroModel.swift */; };
+		FA12706B2799482400D45FB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706A2799482400D45FB4 /* ApiManager.swift */; };
+		FA12706E2799498600D45FB4 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706D2799498600D45FB4 /* NetworkLogger.swift */; };
+		FA12707027994C9400D45FB4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706F27994C9400D45FB4 /* String+Extension.swift */; };
+		FA12707327994E9700D45FB4 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707227994E9700D45FB4 /* HeroService.swift */; };
+		FA12707627994FCE00D45FB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707527994FCE00D45FB4 /* Constants.swift */; };
+		FA1270792799585600D45FB4 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270782799585600D45FB4 /* HeroCell.swift */; };
+		FA12707B27995DC600D45FB4 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13352CFC3DCE8E25EC39F2D3 /* Pods_HammerSystemsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HammerSystemsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1438564CC840B7BA3CAEE2 /* Pods-HammerSystemsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammerSystemsApp.release.xcconfig"; path = "Target Support Files/Pods-HammerSystemsApp/Pods-HammerSystemsApp.release.xcconfig"; sourceTree = "<group>"; };
+		D86F4D1A4C0BDAA853185CBB /* Pods-HammerSystemsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HammerSystemsApp.debug.xcconfig"; path = "Target Support Files/Pods-HammerSystemsApp/Pods-HammerSystemsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FA126F9A2789993400D45FB4 /* HammerSystemsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerSystemsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA126F9D2789993400D45FB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA126F9F2789993400D45FB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA126FA12789993400D45FB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA126FA42789993400D45FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA126FA12789993400D45FB4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FA126FA62789993500D45FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA126FA92789993500D45FB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA126FAB2789993500D45FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA126FBD2789AA2700D45FB4 /* Then+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Then+Extension.swift"; sourceTree = "<group>"; };
+		FA126FC12789AAA200D45FB4 /* MenuViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+TableView.swift"; sourceTree = "<group>"; };
+		FA126FC42789AB9D00D45FB4 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		FA126FC62789B10000D45FB4 /* MenuHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderCell.swift; sourceTree = "<group>"; };
+		FA126FC82789B64B00D45FB4 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FA126FCD278AC58300D45FB4 /* CircularCarousel+Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularCarousel+Gesture.swift"; sourceTree = "<group>"; };
+		FA126FCE278AC58300D45FB4 /* CircularCarousel+Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularCarousel+Scroll.swift"; sourceTree = "<group>"; };
+		FA126FCF278AC58300D45FB4 /* CircularCarouselDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCarouselDelegate.swift; sourceTree = "<group>"; };
+		FA126FD0278AC58400D45FB4 /* CircularCarousel+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularCarousel+Animation.swift"; sourceTree = "<group>"; };
+		FA126FD1278AC58400D45FB4 /* CircularCarousel+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularCarousel+Layout.swift"; sourceTree = "<group>"; };
+		FA126FD2278AC58400D45FB4 /* CircularCarouselDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCarouselDataSource.swift; sourceTree = "<group>"; };
+		FA126FD3278AC58400D45FB4 /* CircularCarousel+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CircularCarousel+Loader.swift"; sourceTree = "<group>"; };
+		FA126FD4278AC58400D45FB4 /* CircularCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularCarousel.swift; sourceTree = "<group>"; };
+		FA126FDF278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuHeaderCell+CircularCarousel.swift"; sourceTree = "<group>"; };
+		FA126FE1278AC84000D45FB4 /* MenuBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBannerView.swift; sourceTree = "<group>"; };
+		FA126FE3278ACD3C00D45FB4 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		FA126FE5278ADF6C00D45FB4 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		FA126FE7278AF3EA00D45FB4 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		FA126FE9278AFA3600D45FB4 /* TagCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
+		FA126FEB278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+TagCollectionView.swift"; sourceTree = "<group>"; };
+		FA126FED278C007400D45FB4 /* MenuViewController+ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+ScrollView.swift"; sourceTree = "<group>"; };
+		FA1270572799383E00D45FB4 /* HeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroPresenter.swift; sourceTree = "<group>"; };
+		FA1270582799383E00D45FB4 /* HeroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRouter.swift; sourceTree = "<group>"; };
+		FA1270592799383E00D45FB4 /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
+		FA12705A2799383E00D45FB4 /* HeroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroInteractor.swift; sourceTree = "<group>"; };
+		FA12705B2799383E00D45FB4 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroViewController+UITableView.swift"; sourceTree = "<group>"; };
+		FA1270672799459600D45FB4 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		FA12706A2799482400D45FB4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		FA12706D2799498600D45FB4 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		FA12706F27994C9400D45FB4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FA12707227994E9700D45FB4 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		FA12707527994FCE00D45FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA1270782799585600D45FB4 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +103,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75082229D50B34B8D55AF77F /* Pods_HammerSystemsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47C53C3DC3620902CDC601C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D86F4D1A4C0BDAA853185CBB /* Pods-HammerSystemsApp.debug.xcconfig */,
+				2C1438564CC840B7BA3CAEE2 /* Pods-HammerSystemsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		545C390A9573C3C772729C41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13352CFC3DCE8E25EC39F2D3 /* Pods_HammerSystemsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA126F912789993400D45FB4 = {
 			isa = PBXGroup;
 			children = (
 				FA126F9C2789993400D45FB4 /* HammerSystemsApp */,
 				FA126F9B2789993400D45FB4 /* Products */,
+				47C53C3DC3620902CDC601C4 /* Pods */,
+				545C390A9573C3C772729C41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +148,241 @@
 		FA126F9C2789993400D45FB4 /* HammerSystemsApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA126F9D2789993400D45FB4 /* AppDelegate.swift */,
-				FA126F9F2789993400D45FB4 /* SceneDelegate.swift */,
-				FA126FA12789993400D45FB4 /* ViewController.swift */,
-				FA126FA32789993400D45FB4 /* Main.storyboard */,
-				FA126FA62789993500D45FB4 /* Assets.xcassets */,
-				FA126FA82789993500D45FB4 /* LaunchScreen.storyboard */,
-				FA126FAB2789993500D45FB4 /* Info.plist */,
+				FA126FB52789A31D00D45FB4 /* Services */,
+				FA126FB42789A31600D45FB4 /* Model */,
+				FA126FB62789A3B300D45FB4 /* Screens */,
+				FA126FB12789A2B200D45FB4 /* Config */,
+				FA126FB92789A3EC00D45FB4 /* SupportedFiles */,
 			);
 			path = HammerSystemsApp;
+			sourceTree = "<group>";
+		};
+		FA126FB12789A2B200D45FB4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FB32789A2F900D45FB4 /* AppDelegates */,
+				FA126FB22789A2B800D45FB4 /* Plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FA126FB22789A2B800D45FB4 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FAB2789993500D45FB4 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		FA126FB32789A2F900D45FB4 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				FA126F9D2789993400D45FB4 /* AppDelegate.swift */,
+				FA126F9F2789993400D45FB4 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		FA126FB42789A31600D45FB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FC82789B64B00D45FB4 /* Menu.swift */,
+				FA1270672799459600D45FB4 /* HeroModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA126FB52789A31D00D45FB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA1270692799481500D45FB4 /* ApiManager */,
+				FA12707127994E8B00D45FB4 /* HeroService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA126FB62789A3B300D45FB4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA12706327993D9300D45FB4 /* Hero */,
+				FA126FB72789A3C300D45FB4 /* Menu */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA126FB72789A3C300D45FB4 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FDD278AC68E00D45FB4 /* Header */,
+				FA126FC32789AB7F00D45FB4 /* Cells */,
+				FA126FBF2789AA8600D45FB4 /* Controller */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FA126FB92789A3EC00D45FB4 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA12707427994FC300D45FB4 /* Constants */,
+				FA12706C2799496B00D45FB4 /* Logger */,
+				FA126FCA278AC53500D45FB4 /* Carousel */,
+				FA126FBA2789AA0200D45FB4 /* Assets */,
+				FA126FBC2789AA1100D45FB4 /* Extensions */,
+				FA126FBB2789AA0A00D45FB4 /* Storyboard */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		FA126FBA2789AA0200D45FB4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FA62789993500D45FB4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FA126FBB2789AA0A00D45FB4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FA82789993500D45FB4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA126FBC2789AA1100D45FB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FBD2789AA2700D45FB4 /* Then+Extension.swift */,
+				FA126FE3278ACD3C00D45FB4 /* UITableView+Extension.swift */,
+				FA126FE5278ADF6C00D45FB4 /* UICollectionView+Extension.swift */,
+				FA126FE7278AF3EA00D45FB4 /* NSObject+Extension.swift */,
+				FA12706F27994C9400D45FB4 /* String+Extension.swift */,
+				FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA126FBF2789AA8600D45FB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FA12789993400D45FB4 /* MenuViewController.swift */,
+				FA126FC02789AA8E00D45FB4 /* Extensions */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA126FC02789AA8E00D45FB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FC12789AAA200D45FB4 /* MenuViewController+TableView.swift */,
+				FA126FEB278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift */,
+				FA126FED278C007400D45FB4 /* MenuViewController+ScrollView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA126FC32789AB7F00D45FB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FC42789AB9D00D45FB4 /* MenuCell.swift */,
+				FA126FE9278AFA3600D45FB4 /* TagCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA126FCA278AC53500D45FB4 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FD4278AC58400D45FB4 /* CircularCarousel.swift */,
+				FA126FD0278AC58400D45FB4 /* CircularCarousel+Animation.swift */,
+				FA126FCD278AC58300D45FB4 /* CircularCarousel+Gesture.swift */,
+				FA126FD1278AC58400D45FB4 /* CircularCarousel+Layout.swift */,
+				FA126FD3278AC58400D45FB4 /* CircularCarousel+Loader.swift */,
+				FA126FCE278AC58300D45FB4 /* CircularCarousel+Scroll.swift */,
+				FA126FD2278AC58400D45FB4 /* CircularCarouselDataSource.swift */,
+				FA126FCF278AC58300D45FB4 /* CircularCarouselDelegate.swift */,
+			);
+			path = Carousel;
+			sourceTree = "<group>";
+		};
+		FA126FDD278AC68E00D45FB4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FC62789B10000D45FB4 /* MenuHeaderCell.swift */,
+				FA126FE1278AC84000D45FB4 /* MenuBannerView.swift */,
+				FA126FDE278AC69D00D45FB4 /* Extensions */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FA126FDE278AC69D00D45FB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA126FDF278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA12706327993D9300D45FB4 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				FA1270772799584800D45FB4 /* Cell */,
+				FA12705B2799383E00D45FB4 /* HeroView.swift */,
+				FA1270592799383E00D45FB4 /* HeroViewController.swift */,
+				FA1270572799383E00D45FB4 /* HeroPresenter.swift */,
+				FA12705A2799383E00D45FB4 /* HeroInteractor.swift */,
+				FA1270582799383E00D45FB4 /* HeroRouter.swift */,
+				FA12706427993FEC00D45FB4 /* Extensions */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		FA12706427993FEC00D45FB4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA1270692799481500D45FB4 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				FA12706A2799482400D45FB4 /* ApiManager.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		FA12706C2799496B00D45FB4 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				FA12706D2799498600D45FB4 /* NetworkLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		FA12707127994E8B00D45FB4 /* HeroService */ = {
+			isa = PBXGroup;
+			children = (
+				FA12707227994E9700D45FB4 /* HeroService.swift */,
+			);
+			path = HeroService;
+			sourceTree = "<group>";
+		};
+		FA12707427994FC300D45FB4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA12707527994FCE00D45FB4 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA1270772799584800D45FB4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA1270782799585600D45FB4 /* HeroCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +392,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA126FAE2789993500D45FB4 /* Build configuration list for PBXNativeTarget "HammerSystemsApp" */;
 			buildPhases = (
+				3F57AF81B8484D1CA9B7550C /* [CP] Check Pods Manifest.lock */,
 				FA126F962789993400D45FB4 /* Sources */,
 				FA126F972789993400D45FB4 /* Frameworks */,
 				FA126F982789993400D45FB4 /* Resources */,
+				22EBC2A4BD55A8D80E63EA61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +447,102 @@
 			files = (
 				FA126FAA2789993500D45FB4 /* LaunchScreen.storyboard in Resources */,
 				FA126FA72789993500D45FB4 /* Assets.xcassets in Resources */,
-				FA126FA52789993400D45FB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22EBC2A4BD55A8D80E63EA61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HammerSystemsApp/Pods-HammerSystemsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HammerSystemsApp/Pods-HammerSystemsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HammerSystemsApp/Pods-HammerSystemsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F57AF81B8484D1CA9B7550C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HammerSystemsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA126F962789993400D45FB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA126FA22789993400D45FB4 /* ViewController.swift in Sources */,
+				FA12706B2799482400D45FB4 /* ApiManager.swift in Sources */,
+				FA126FD9278AC58400D45FB4 /* CircularCarousel+Layout.swift in Sources */,
+				FA126FEC278AFA6300D45FB4 /* MenuViewController+TagCollectionView.swift in Sources */,
+				FA126FDB278AC58400D45FB4 /* CircularCarouselDelegate.swift in Sources */,
+				FA126FE4278ACD3C00D45FB4 /* UITableView+Extension.swift in Sources */,
+				FA12705F2799383E00D45FB4 /* HeroViewController.swift in Sources */,
+				FA126FE0278AC6C300D45FB4 /* MenuHeaderCell+CircularCarousel.swift in Sources */,
+				FA126FA22789993400D45FB4 /* MenuViewController.swift in Sources */,
+				FA12707027994C9400D45FB4 /* String+Extension.swift in Sources */,
 				FA126F9E2789993400D45FB4 /* AppDelegate.swift in Sources */,
+				FA126FEE278C007400D45FB4 /* MenuViewController+ScrollView.swift in Sources */,
+				FA126FC92789B64B00D45FB4 /* Menu.swift in Sources */,
+				FA126FDC278AC58400D45FB4 /* CircularCarousel+Scroll.swift in Sources */,
+				FA126FD7278AC58400D45FB4 /* CircularCarousel+Loader.swift in Sources */,
+				FA126FC52789AB9D00D45FB4 /* MenuCell.swift in Sources */,
+				FA126FD6278AC58400D45FB4 /* CircularCarousel+Animation.swift in Sources */,
+				FA12707B27995DC600D45FB4 /* UIImageView+Extension.swift in Sources */,
+				FA126FD5278AC58400D45FB4 /* CircularCarousel.swift in Sources */,
+				FA126FBE2789AA2700D45FB4 /* Then+Extension.swift in Sources */,
+				FA126FC72789B10000D45FB4 /* MenuHeaderCell.swift in Sources */,
+				FA126FDA278AC58400D45FB4 /* CircularCarouselDataSource.swift in Sources */,
+				FA12706627993FFD00D45FB4 /* HeroViewController+UITableView.swift in Sources */,
+				FA12707327994E9700D45FB4 /* HeroService.swift in Sources */,
+				FA1270682799459600D45FB4 /* HeroModel.swift in Sources */,
+				FA12706E2799498600D45FB4 /* NetworkLogger.swift in Sources */,
+				FA126FE2278AC84000D45FB4 /* MenuBannerView.swift in Sources */,
+				FA126FEA278AFA3600D45FB4 /* TagCollectionCell.swift in Sources */,
+				FA1270612799383E00D45FB4 /* HeroView.swift in Sources */,
+				FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */,
+				FA126FE6278ADF6C00D45FB4 /* UICollectionView+Extension.swift in Sources */,
+				FA1270792799585600D45FB4 /* HeroCell.swift in Sources */,
 				FA126FA02789993400D45FB4 /* SceneDelegate.swift in Sources */,
+				FA126FD8278AC58400D45FB4 /* CircularCarousel+Gesture.swift in Sources */,
+				FA12705E2799383E00D45FB4 /* HeroRouter.swift in Sources */,
+				FA126FC22789AAA200D45FB4 /* MenuViewController+TableView.swift in Sources */,
+				FA126FE8278AF3EA00D45FB4 /* NSObject+Extension.swift in Sources */,
+				FA12705D2799383E00D45FB4 /* HeroPresenter.swift in Sources */,
+				FA12707627994FCE00D45FB4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA126FA32789993400D45FB4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA126FA42789993400D45FB4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA126FA82789993500D45FB4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +672,7 @@
 		};
 		FA126FAF2789993500D45FB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86F4D1A4C0BDAA853185CBB /* Pods-HammerSystemsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,10 +680,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57JGZH9BYG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HammerSystemsApp/Info.plist;
+				INFOPLIST_FILE = HammerSystemsApp/Config/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +700,7 @@
 		};
 		FA126FB02789993500D45FB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1438564CC840B7BA3CAEE2 /* Pods-HammerSystemsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,10 +708,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57JGZH9BYG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HammerSystemsApp/Info.plist;
+				INFOPLIST_FILE = HammerSystemsApp/Config/Plist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
