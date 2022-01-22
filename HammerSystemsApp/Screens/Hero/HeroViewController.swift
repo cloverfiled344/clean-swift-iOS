@@ -9,14 +9,18 @@
 import UIKit
 
 protocol HeroDisplayLogic where Self: UIViewController {
-    func displayHeroModels(_ data: [HeroModel])
+//    func displayHeroModels(_ data: [Hero])
+    func displayHeroModels(_ viewModel: HeroModels.Fetch.ViewModel)
 }
 
 final class HeroViewController: UIViewController {
     
-    // MARK: Internal properties
+    // MARK: - External properties
+    private(set) var router: HeroRouting?
     private var interactor: HeroBusinessLogic?
-    private(set) var heroDisplayData = [HeroModel]()
+    
+    // MARK: Internal properties
+    private(set) var heroDisplayData = [Hero]()
     
     // MARK: UI Components
     private let mainView = HeroView()
@@ -48,9 +52,11 @@ final class HeroViewController: UIViewController {
         let viewController = self
         let presenter = HeroPresenter()
         let interactor = HeroInteractor()
+        let router = HeroRouter(viewController: viewController)
         interactor.presenter = presenter
         presenter.viewController = viewController
         viewController.interactor = interactor
+        viewController.router = router
     }
     
     // MARK: Setup UI methods
@@ -68,13 +74,17 @@ final class HeroViewController: UIViewController {
 
 // MARK: - HeroDisplayLogic
 extension HeroViewController: HeroDisplayLogic {
-    
-    func displayHeroModels(_ data: [HeroModel]) {
+    func displayHeroModels(_ viewModel: HeroModels.Fetch.ViewModel) {
         heroDisplayData.removeAll()
-        heroDisplayData.append(contentsOf: data)
+        heroDisplayData.append(contentsOf: viewModel.heros)
         let result = Array(heroDisplayData.dropFirst(100))
         heroDisplayData = result
         mainView.tableView.reloadData()
+    }
+    
+    
+    func displayHeroModels(_ data: [Hero]) {
+        
     }
 }
 

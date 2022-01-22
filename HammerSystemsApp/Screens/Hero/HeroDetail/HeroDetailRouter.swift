@@ -8,14 +8,26 @@
 
 import UIKit
 
+typealias HeroDetailRoutable = HeroDetailRouting & HeroDetailDataPassingDelegate
+
 protocol HeroDetailRouting {
     
 }
 
-final class HeroDetailRouter {
+protocol HeroDetailDataPassingDelegate {
+    var dataStore: HeroDetailDataStore? { get }
+}
+
+final class HeroDetailRouter: HeroDetailDataPassingDelegate {
     
-    weak var viewController: UIViewController?
+    // MARK: - Internal properties
+    private weak var viewController: UIViewController?
+    weak var dataStore: HeroDetailDataStore?
     
+    // MARK: - Init
+    init(viewController: UIViewController?) {
+        self.viewController = viewController
+    }
 }
 
 // MARK: - HeroDetailRouting

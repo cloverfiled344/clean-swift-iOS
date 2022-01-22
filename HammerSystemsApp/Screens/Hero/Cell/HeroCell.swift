@@ -35,7 +35,7 @@ class HeroCell: UITableViewCell {
     }
     
     // MARK: - Configure Cell
-    func configureCell(_ heroModel: HeroModel) {
+    func configureCell(_ heroModel: Hero) {
         guard let iconStringURL = heroModel.icon else { return }
         heroImage.load(Constants.mainAPI + iconStringURL)
         heroName.text = heroModel.localizedName

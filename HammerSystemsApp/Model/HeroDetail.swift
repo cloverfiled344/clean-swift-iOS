@@ -1,5 +1,5 @@
 //
-//  HeroDetailModel.swift
+//  HeroDetail.swift
 //  HammerSystemsApp
 //
 //  Created by Zhoomartov Erbolot on 20.01.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct HeroDetailModel {
+struct HeroDetail {
     
     var image: String?
     var description: String?

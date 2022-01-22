@@ -40,11 +40,11 @@
 		FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12705A2799383E00D45FB4 /* HeroInteractor.swift */; };
 		FA1270612799383E00D45FB4 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12705B2799383E00D45FB4 /* HeroView.swift */; };
 		FA12706627993FFD00D45FB4 /* HeroViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */; };
-		FA1270682799459600D45FB4 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270672799459600D45FB4 /* HeroModel.swift */; };
+		FA1270682799459600D45FB4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270672799459600D45FB4 /* Hero.swift */; };
 		FA12706B2799482400D45FB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706A2799482400D45FB4 /* ApiManager.swift */; };
 		FA12706E2799498600D45FB4 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706D2799498600D45FB4 /* NetworkLogger.swift */; };
 		FA12707027994C9400D45FB4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12706F27994C9400D45FB4 /* String+Extension.swift */; };
-		FA12707327994E9700D45FB4 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707227994E9700D45FB4 /* HeroService.swift */; };
+		FA12707327994E9700D45FB4 /* HeroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707227994E9700D45FB4 /* HeroWorker.swift */; };
 		FA12707627994FCE00D45FB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707527994FCE00D45FB4 /* Constants.swift */; };
 		FA1270792799585600D45FB4 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270782799585600D45FB4 /* HeroCell.swift */; };
 		FA12707B27995DC600D45FB4 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */; };
@@ -53,6 +53,9 @@
 		FA12709D2799D71800D45FB4 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */; };
 		FA12709E2799D71800D45FB4 /* HeroDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */; };
 		FA12709F2799D71800D45FB4 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA12709A2799D71800D45FB4 /* HeroDetailView.swift */; };
+		FA1270A1279AAD6600D45FB4 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A0279AAD6600D45FB4 /* HeroDetail.swift */; };
+		FA1270A3279C126E00D45FB4 /* HeroDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A2279C126E00D45FB4 /* HeroDetailModels.swift */; };
+		FA1270A5279C1D6000D45FB4 /* HeroModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A4279C1D6000D45FB4 /* HeroModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,11 +96,11 @@
 		FA12705A2799383E00D45FB4 /* HeroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroInteractor.swift; sourceTree = "<group>"; };
 		FA12705B2799383E00D45FB4 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 		FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroViewController+UITableView.swift"; sourceTree = "<group>"; };
-		FA1270672799459600D45FB4 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		FA1270672799459600D45FB4 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		FA12706A2799482400D45FB4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		FA12706D2799498600D45FB4 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		FA12706F27994C9400D45FB4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		FA12707227994E9700D45FB4 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		FA12707227994E9700D45FB4 /* HeroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroWorker.swift; sourceTree = "<group>"; };
 		FA12707527994FCE00D45FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA1270782799585600D45FB4 /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -106,6 +109,9 @@
 		FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
 		FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailInteractor.swift; sourceTree = "<group>"; };
 		FA12709A2799D71800D45FB4 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		FA1270A0279AAD6600D45FB4 /* HeroDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
+		FA1270A2279C126E00D45FB4 /* HeroDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailModels.swift; sourceTree = "<group>"; };
+		FA1270A4279C1D6000D45FB4 /* HeroModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				FA126FC82789B64B00D45FB4 /* Menu.swift */,
-				FA1270672799459600D45FB4 /* HeroModel.swift */,
+				FA1270672799459600D45FB4 /* Hero.swift */,
+				FA1270A0279AAD6600D45FB4 /* HeroDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				FA1270692799481500D45FB4 /* ApiManager */,
-				FA12707127994E8B00D45FB4 /* HeroService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -340,9 +346,11 @@
 				FA1270772799584800D45FB4 /* Cell */,
 				FA12705B2799383E00D45FB4 /* HeroView.swift */,
 				FA1270592799383E00D45FB4 /* HeroViewController.swift */,
-				FA1270572799383E00D45FB4 /* HeroPresenter.swift */,
+				FA12707227994E9700D45FB4 /* HeroWorker.swift */,
 				FA12705A2799383E00D45FB4 /* HeroInteractor.swift */,
+				FA1270572799383E00D45FB4 /* HeroPresenter.swift */,
 				FA1270582799383E00D45FB4 /* HeroRouter.swift */,
+				FA1270A4279C1D6000D45FB4 /* HeroModels.swift */,
 				FA12706427993FEC00D45FB4 /* Extensions */,
 			);
 			path = Hero;
@@ -372,14 +380,6 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
-		FA12707127994E8B00D45FB4 /* HeroService */ = {
-			isa = PBXGroup;
-			children = (
-				FA12707227994E9700D45FB4 /* HeroService.swift */,
-			);
-			path = HeroService;
-			sourceTree = "<group>";
-		};
 		FA12707427994FC300D45FB4 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,9 +401,10 @@
 			children = (
 				FA12709A2799D71800D45FB4 /* HeroDetailView.swift */,
 				FA1270982799D71800D45FB4 /* HeroDetailViewController.swift */,
-				FA1270962799D71800D45FB4 /* HeroDetailPresenter.swift */,
 				FA1270992799D71800D45FB4 /* HeroDetailInteractor.swift */,
+				FA1270962799D71800D45FB4 /* HeroDetailPresenter.swift */,
 				FA1270972799D71800D45FB4 /* HeroDetailRouter.swift */,
+				FA1270A2279C126E00D45FB4 /* HeroDetailModels.swift */,
 			);
 			name = HeroDetail;
 			path = Hero/HeroDetail;
@@ -534,6 +535,7 @@
 				FA126FA22789993400D45FB4 /* MenuViewController.swift in Sources */,
 				FA12707027994C9400D45FB4 /* String+Extension.swift in Sources */,
 				FA126F9E2789993400D45FB4 /* AppDelegate.swift in Sources */,
+				FA1270A5279C1D6000D45FB4 /* HeroModels.swift in Sources */,
 				FA126FEE278C007400D45FB4 /* MenuViewController+ScrollView.swift in Sources */,
 				FA126FC92789B64B00D45FB4 /* Menu.swift in Sources */,
 				FA126FDC278AC58400D45FB4 /* CircularCarousel+Scroll.swift in Sources */,
@@ -548,15 +550,17 @@
 				FA126FC72789B10000D45FB4 /* MenuHeaderCell.swift in Sources */,
 				FA126FDA278AC58400D45FB4 /* CircularCarouselDataSource.swift in Sources */,
 				FA12706627993FFD00D45FB4 /* HeroViewController+UITableView.swift in Sources */,
-				FA12707327994E9700D45FB4 /* HeroService.swift in Sources */,
-				FA1270682799459600D45FB4 /* HeroModel.swift in Sources */,
+				FA12707327994E9700D45FB4 /* HeroWorker.swift in Sources */,
+				FA1270682799459600D45FB4 /* Hero.swift in Sources */,
 				FA12706E2799498600D45FB4 /* NetworkLogger.swift in Sources */,
 				FA126FE2278AC84000D45FB4 /* MenuBannerView.swift in Sources */,
 				FA126FEA278AFA3600D45FB4 /* TagCollectionCell.swift in Sources */,
 				FA1270612799383E00D45FB4 /* HeroView.swift in Sources */,
+				FA1270A3279C126E00D45FB4 /* HeroDetailModels.swift in Sources */,
 				FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */,
 				FA126FE6278ADF6C00D45FB4 /* UICollectionView+Extension.swift in Sources */,
 				FA12709F2799D71800D45FB4 /* HeroDetailView.swift in Sources */,
+				FA1270A1279AAD6600D45FB4 /* HeroDetail.swift in Sources */,
 				FA1270792799585600D45FB4 /* HeroCell.swift in Sources */,
 				FA126FA02789993400D45FB4 /* SceneDelegate.swift in Sources */,
 				FA126FD8278AC58400D45FB4 /* CircularCarousel+Gesture.swift in Sources */,

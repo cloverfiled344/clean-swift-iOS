@@ -15,8 +15,8 @@ protocol HeroDetailDisplayLogic where Self: UIViewController {
 final class HeroDetailViewController: UIViewController {
     
     // MARK: - Internal properties
-    private var interactor: HeroDetailBusinessLogic?
-//    private var router: HeroDetailRouting?
+    private var interactor: HeroDetailInteractable?
+    private(set) var router: HeroDetailRoutable?
 //    private(set) var displayData: [Any] = []
     
     // MARK: - UI Components
@@ -49,10 +49,12 @@ final class HeroDetailViewController: UIViewController {
         let viewController = self
         let presenter = HeroDetailPresenter()
         let interactor = HeroDetailInteractor()
-//        let router = HeroDetailRouter()
+        let router = HeroDetailRouter(viewController: viewController)
+        router.dataStore = interactor
         interactor.presenter = presenter
         presenter.viewController = viewController
         viewController.interactor = interactor
+        viewController.router = router
     }
     
     // MARK: - Setup UI methods

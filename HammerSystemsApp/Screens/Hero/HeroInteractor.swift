@@ -24,7 +24,7 @@ final class HeroInteractor {
     var presenter: HeroPresentationLogic?
     
     // MARK: - Internal Properties
-    private let heroService = HeroService.init()
+    private let heroWorker = HeroWorker.init()
 }
 
 
@@ -33,9 +33,12 @@ extension HeroInteractor: HeroBusinessLogic {
     
     func fetchHeroes() {
         DispatchQueue.main.async {
-            self.heroService.getHeroes { [weak self] heroModels in
-                self?.presenter?.presentHeroModels(data: heroModels)
+            self.heroWorker.getHeroes { [weak self] (object) in
+                self?.presenter?.presentFetchResults(response: object)
             }
+//            self.heroWorker.getHeroes { [weak self] heroModels in
+//                self?.presenter?.presentHeroModels(data: heroModels)
+//            }
         }
     }
 }

@@ -14,13 +14,17 @@ protocol HeroDetailBusinessLogic {
     
 }
 
-protocol HeroDetailDataStore {
-    
+protocol HeroDetailDataStore: AnyObject {
+    var heroDetailModels: [HeroDetail] { get set }
 }
 
-final class HeroDetailInteractor {
+final class HeroDetailInteractor: HeroDetailDataStore {
     
+    // MARK: - External properties
     var presenter: HeroDetailPresentationLogic?
+    
+    // MARK: - Internal properties
+    var heroDetailModels: [HeroDetail] = []
     
 }
 

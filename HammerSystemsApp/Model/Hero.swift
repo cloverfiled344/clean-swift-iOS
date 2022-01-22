@@ -1,5 +1,5 @@
 //
-//  HeroModel.swift
+//  Hero.swift
 //  HammerSystemsApp
 //
 //  Created by Zhoomartov Erbolot on 20.01.2022.
@@ -8,7 +8,7 @@
 import UIKit
 import ObjectMapper
 
-class HeroModel: Mappable {
+class Hero: Mappable {
     
     var id: Int?
     var name: String?

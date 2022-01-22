@@ -9,7 +9,8 @@
 import Foundation
 
 protocol HeroPresentationLogic {
-    func presentHeroModels(data: [HeroModel])
+    func presentFetchResults(response: HeroModels.Fetch.Response)
+//    func presentHeroModels(data: [Hero])
 }
 
 final class HeroPresenter {
@@ -18,13 +19,17 @@ final class HeroPresenter {
     
 }
 
-
 // MARK: - HeroPresentationLogic
 extension HeroPresenter: HeroPresentationLogic {
     
-    func presentHeroModels(data: [HeroModel]) {
-        viewController?.displayHeroModels(data)
+    func presentFetchResults(response: HeroModels.Fetch.Response) {
+        let viewModel = HeroModels.Fetch.ViewModel.init(heros: response.heros)
+        viewController?.displayHeroModels(viewModel)
     }
+    
+//    func presentHeroModels(data: [Hero]) {
+//        viewController?.displayHeroModels(data)
+//    }
 }
 
 

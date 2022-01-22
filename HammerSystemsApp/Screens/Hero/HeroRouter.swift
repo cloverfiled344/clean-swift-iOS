@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HeroRouting {
-    
+    func navigateToHeroDetail(heroDetailModels: [HeroDetail])
 }
 
 final class HeroRouter {
@@ -21,12 +21,15 @@ final class HeroRouter {
     }
 }
 
-
 // MARK: - HeroRouting
 extension HeroRouter: HeroRouting {
     
+    func navigateToHeroDetail(heroDetailModels: [HeroDetail]) {
+        let vc = HeroDetailViewController()
+        vc.router?.dataStore?.heroDetailModels = heroDetailModels
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
 }
-
 
 // MARK: - Private Zone
 private extension HeroRouter {
