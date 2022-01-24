@@ -71,9 +71,9 @@ final class HeroViewController: UIViewController {
     }
 }
 
-
 // MARK: - HeroDisplayLogic
 extension HeroViewController: HeroDisplayLogic {
+    
     func displayHeroModels(_ viewModel: HeroModels.Fetch.ViewModel) {
         heroDisplayData.removeAll()
         heroDisplayData.append(contentsOf: viewModel.heros)
@@ -81,7 +81,6 @@ extension HeroViewController: HeroDisplayLogic {
         heroDisplayData = result
         mainView.tableView.reloadData()
     }
-    
     
     func displayHeroModels(_ data: [Hero]) {
         

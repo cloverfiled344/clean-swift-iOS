@@ -14,7 +14,7 @@ extension MenuViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(MenuCell.self, indexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(MenuCell.self, indexPath)
         return cell
     }
     

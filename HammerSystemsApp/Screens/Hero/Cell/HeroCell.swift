@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol HeroCellDelegate: AnyObject {
+    func didTapOnMoreInfoButton(_ selectRow: Int)
+}
+
 class HeroCell: UITableViewCell {
     
     // MARK: UI Components
@@ -24,6 +28,18 @@ class HeroCell: UITableViewCell {
         return view
     }()
     
+    private let moreInfoButton: UIButton = {
+        let view = UIButton()
+        view.setTitle("More information", for: .normal)
+        view.setTitleColor(.brown, for: .normal)
+        view.addTarget(self, action: #selector(moreInfoButtonAction), for: .touchUpInside)
+        return view
+    }()
+    
+    // MARK: Internal properties
+    private var selectRow: Int = .zero
+    weak var delegate: HeroCellDelegate?
+    
     // MARK: Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -35,7 +51,8 @@ class HeroCell: UITableViewCell {
     }
     
     // MARK: - Configure Cell
-    func configureCell(_ heroModel: Hero) {
+    func configureCell(_ heroModel: Hero, _ row: Int) {
+        selectRow = row
         guard let iconStringURL = heroModel.icon else { return }
         heroImage.load(Constants.mainAPI + iconStringURL)
         heroName.text = heroModel.localizedName
@@ -45,6 +62,7 @@ class HeroCell: UITableViewCell {
     private func setupUI() {
         contentView.addSubview(heroImage)
         contentView.addSubview(heroName)
+        contentView.addSubview(moreInfoButton)
         
         heroImage.snp.makeConstraints { make in
             make.top.left.equalToSuperview().offset(8)
@@ -55,7 +73,18 @@ class HeroCell: UITableViewCell {
         heroName.snp.makeConstraints { make in
             make.top.equalTo(heroImage)
             make.left.equalTo(heroImage.snp.right).offset(8)
-            make.bottom.right.equalToSuperview().offset(-8)
+            make.bottom.equalToSuperview().offset(-8)
         }
+        
+        moreInfoButton.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(8)
+            make.bottom.right.equalToSuperview().offset(-8)
+//            make.left.equalTo(heroName.snp.right).offset(8)
+        }
+    }
+    
+    // MARK: - Actions
+    @objc private func moreInfoButtonAction() {
+        delegate?.didTapOnMoreInfoButton(selectRow)
     }
 }

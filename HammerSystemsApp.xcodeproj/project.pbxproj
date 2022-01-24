@@ -56,6 +56,10 @@
 		FA1270A1279AAD6600D45FB4 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A0279AAD6600D45FB4 /* HeroDetail.swift */; };
 		FA1270A3279C126E00D45FB4 /* HeroDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A2279C126E00D45FB4 /* HeroDetailModels.swift */; };
 		FA1270A5279C1D6000D45FB4 /* HeroModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A4279C1D6000D45FB4 /* HeroModels.swift */; };
+		FA1270A7279D4CD300D45FB4 /* HeroViewController+HeroCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270A6279D4CD300D45FB4 /* HeroViewController+HeroCellDelegate.swift */; };
+		FA1270AC279EEF6800D45FB4 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270AB279EEF6800D45FB4 /* UIApplication+Extension.swift */; };
+		FA1270AE279EEF7A00D45FB4 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270AD279EEF7900D45FB4 /* UIViewController+Extension.swift */; };
+		FA1270B1279EF5A400D45FB4 /* HammerSystemsTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270B0279EF5A400D45FB4 /* HammerSystemsTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +116,10 @@
 		FA1270A0279AAD6600D45FB4 /* HeroDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
 		FA1270A2279C126E00D45FB4 /* HeroDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailModels.swift; sourceTree = "<group>"; };
 		FA1270A4279C1D6000D45FB4 /* HeroModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModels.swift; sourceTree = "<group>"; };
+		FA1270A6279D4CD300D45FB4 /* HeroViewController+HeroCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroViewController+HeroCellDelegate.swift"; sourceTree = "<group>"; };
+		FA1270AB279EEF6800D45FB4 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		FA1270AD279EEF7900D45FB4 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FA1270B0279EF5A400D45FB4 /* HammerSystemsTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerSystemsTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +228,7 @@
 		FA126FB62789A3B300D45FB4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FA1270AF279EF58000D45FB4 /* HammerSystemsTabBar */,
 				FA12708B2799BAC300D45FB4 /* HeroDetail */,
 				FA12706327993D9300D45FB4 /* Hero */,
 				FA126FB72789A3C300D45FB4 /* Menu */,
@@ -275,6 +284,8 @@
 				FA126FE7278AF3EA00D45FB4 /* NSObject+Extension.swift */,
 				FA12706F27994C9400D45FB4 /* String+Extension.swift */,
 				FA12707A27995DC600D45FB4 /* UIImageView+Extension.swift */,
+				FA1270AB279EEF6800D45FB4 /* UIApplication+Extension.swift */,
+				FA1270AD279EEF7900D45FB4 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -360,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				FA12706527993FFD00D45FB4 /* HeroViewController+UITableView.swift */,
+				FA1270A6279D4CD300D45FB4 /* HeroViewController+HeroCellDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -408,6 +420,14 @@
 			);
 			name = HeroDetail;
 			path = Hero/HeroDetail;
+			sourceTree = "<group>";
+		};
+		FA1270AF279EF58000D45FB4 /* HammerSystemsTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FA1270B0279EF5A400D45FB4 /* HammerSystemsTabBar.swift */,
+			);
+			path = HammerSystemsTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,7 +558,9 @@
 				FA1270A5279C1D6000D45FB4 /* HeroModels.swift in Sources */,
 				FA126FEE278C007400D45FB4 /* MenuViewController+ScrollView.swift in Sources */,
 				FA126FC92789B64B00D45FB4 /* Menu.swift in Sources */,
+				FA1270A7279D4CD300D45FB4 /* HeroViewController+HeroCellDelegate.swift in Sources */,
 				FA126FDC278AC58400D45FB4 /* CircularCarousel+Scroll.swift in Sources */,
+				FA1270B1279EF5A400D45FB4 /* HammerSystemsTabBar.swift in Sources */,
 				FA126FD7278AC58400D45FB4 /* CircularCarousel+Loader.swift in Sources */,
 				FA126FC52789AB9D00D45FB4 /* MenuCell.swift in Sources */,
 				FA126FD6278AC58400D45FB4 /* CircularCarousel+Animation.swift in Sources */,
@@ -557,6 +579,7 @@
 				FA126FEA278AFA3600D45FB4 /* TagCollectionCell.swift in Sources */,
 				FA1270612799383E00D45FB4 /* HeroView.swift in Sources */,
 				FA1270A3279C126E00D45FB4 /* HeroDetailModels.swift in Sources */,
+				FA1270AC279EEF6800D45FB4 /* UIApplication+Extension.swift in Sources */,
 				FA1270602799383E00D45FB4 /* HeroInteractor.swift in Sources */,
 				FA126FE6278ADF6C00D45FB4 /* UICollectionView+Extension.swift in Sources */,
 				FA12709F2799D71800D45FB4 /* HeroDetailView.swift in Sources */,
@@ -568,6 +591,7 @@
 				FA12709C2799D71800D45FB4 /* HeroDetailRouter.swift in Sources */,
 				FA126FC22789AAA200D45FB4 /* MenuViewController+TableView.swift in Sources */,
 				FA126FE8278AF3EA00D45FB4 /* NSObject+Extension.swift in Sources */,
+				FA1270AE279EEF7A00D45FB4 /* UIViewController+Extension.swift in Sources */,
 				FA12705D2799383E00D45FB4 /* HeroPresenter.swift in Sources */,
 				FA12707627994FCE00D45FB4 /* Constants.swift in Sources */,
 			);

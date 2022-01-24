@@ -16,8 +16,9 @@ extension HeroViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(HeroCell.self, indexPath: indexPath)
-        cell.configureCell(self.heroDisplayData[indexPath.row])
+        let cell = tableView.dequeueReusableCell(HeroCell.self, indexPath)
+        cell.configureCell(self.heroDisplayData[indexPath.row], indexPath.row)
+        cell.delegate = self
         return cell
     }
 }

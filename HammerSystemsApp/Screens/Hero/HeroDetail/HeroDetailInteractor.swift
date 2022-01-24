@@ -11,11 +11,11 @@ import Foundation
 typealias HeroDetailInteractable = HeroDetailBusinessLogic & HeroDetailDataStore
 
 protocol HeroDetailBusinessLogic {
-    
+    func fetchHeroDetail()
 }
 
 protocol HeroDetailDataStore: AnyObject {
-    var heroDetailModels: [HeroDetail] { get set }
+    var heroDetailModels: HeroDetail { get set }
 }
 
 final class HeroDetailInteractor: HeroDetailDataStore {
@@ -24,13 +24,16 @@ final class HeroDetailInteractor: HeroDetailDataStore {
     var presenter: HeroDetailPresentationLogic?
     
     // MARK: - Internal properties
-    var heroDetailModels: [HeroDetail] = []
+    var heroDetailModels: HeroDetail = .init()
     
 }
 
 // MARK: - HeroDetailBusinessLogic
 extension HeroDetailInteractor: HeroDetailBusinessLogic {
     
+    func fetchHeroDetail() {
+        print("FFFFEEETCH hero detail \(self.heroDetailModels)")
+    }
 }
 
 // MARK: - Private Zone

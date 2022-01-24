@@ -40,7 +40,7 @@ final class HeroDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //interactor.doSomething(item: 22)
+        interactor?.fetchHeroDetail()
         setupUI()
     }
     
