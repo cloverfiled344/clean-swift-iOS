@@ -17,7 +17,7 @@ extension MenuViewController {
 
 // MARK: - MenuViewController
 class MenuViewController: UIViewController {
-
+    
     // MARK: UI Components
     private let tableView: UITableView = {
         let view = UITableView()
@@ -85,8 +85,8 @@ class MenuViewController: UIViewController {
                                   navBarBackColor: .white,
                                   navBarTintColor: .white,
                                   prefersLargeTitles: false)
-//        let rightBarButtonItem = UINavigationItem(customView: citySelectBarButtonItem)
-//        navigationItem.rightBarButtonItem = rightBarButtonItem
+        //        let rightBarButtonItem = UINavigationItem(customView: citySelectBarButtonItem)
+        //        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
     private func setupMenuTableView() {
@@ -113,54 +113,11 @@ class MenuViewController: UIViewController {
             make.right.equalToSuperview()
             make.height.equalTo(36)
         }
-
+        
         tableView.snp.makeConstraints { make in
             make.top.equalTo(tagCollectionView.snp.bottom).offset(24)
             make.bottom.equalToSuperview()
             make.left.right.equalToSuperview()
-        }
-    }
-}
-
-
-
-
-extension UIViewController {
-    
-    func setNavigationBarBackColor(title: String, statusBarBackColor: UIColor, navBarBackColor: UIColor, navBarTintColor: UIColor, prefersLargeTitles: Bool) {
-        
-        UIApplication.shared.statusBarUIView!.backgroundColor = statusBarBackColor
-        self.navigationController?.navigationBar.backgroundColor = navBarBackColor
-        self.navigationController?.navigationBar.barTintColor = navBarTintColor
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.prefersLargeTitles = prefersLargeTitles
-        self.navigationItem.title = title
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
-    }
-}
-
-extension UIApplication {
-    
-    var statusBarUIView: UIView? {
-        if #available(iOS 13.0, *) {
-            let tag = 38482
-            let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-            
-            if let statusBar = keyWindow?.viewWithTag(tag) {
-                return statusBar
-            } else {
-                guard let statusBarFrame = keyWindow?.windowScene?.statusBarManager?.statusBarFrame else { return nil }
-                let statusBarView = UIView(frame: statusBarFrame)
-                statusBarView.tag = tag
-                keyWindow?.addSubview(statusBarView)
-                return statusBarView
-            }
-        } else if responds(to: Selector(("statusBar"))) {
-            return value(forKey: "statusBar") as? UIView
-        } else {
-            return nil
         }
     }
 }
