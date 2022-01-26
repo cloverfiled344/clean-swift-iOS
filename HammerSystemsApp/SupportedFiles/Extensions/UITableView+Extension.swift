@@ -16,7 +16,7 @@ extension UITableView {
     }
     
     func dequeueReusableCell<T: UITableViewCell>(_ cellType: T.Type,
-                                                 indexPath: IndexPath) -> T {
+                                                 _ indexPath: IndexPath) -> T {
         let className = String(describing: cellType)
         let identifier = className + "ID"
         return dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! T
