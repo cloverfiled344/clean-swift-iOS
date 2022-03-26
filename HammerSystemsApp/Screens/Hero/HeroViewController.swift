@@ -21,6 +21,7 @@ final class HeroViewController: UIViewController {
     
     // MARK: Internal properties
     private(set) var heroDisplayData = [Hero]()
+    private(set) var heroWithAsyncDisplayData = [HeroWithAsync]()
     
     // MARK: UI Components
     private let mainView = HeroView()

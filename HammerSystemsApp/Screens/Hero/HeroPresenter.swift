@@ -27,6 +27,11 @@ extension HeroPresenter: HeroPresentationLogic {
         viewController?.displayHeroModels(viewModel)
     }
     
+//    func presentFetchResults(response: HeroModels.Fetch.Response) {
+//        let viewModel = HeroModels.Fetch.ViewModel.init(heros: response.heros)
+//        viewController?.displayHeroModels(viewModel)
+//    }
+    
 //    func presentHeroModels(data: [Hero]) {
 //        viewController?.displayHeroModels(data)
 //    }

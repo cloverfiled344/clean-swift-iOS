@@ -39,3 +39,26 @@ class Hero: Mappable {
     }
 }
 
+class HeroWithAsync: Codable {
+    
+    var id: Int?
+    var name: String?
+    var localizedName: String?
+    var attackType: String?
+    var img: String?
+    var icon: String?
+    var baseHealth: String?
+    var baseAttackMax: String?
+    var baseAttackMin: String?
+    var roles: [String] = []
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name, img, icon, roles
+        case localizedName = "localized_name"
+        case attackType = "attack_type"
+        case baseHealth = "base_health"
+        case baseAttackMax = "base_attack_max"
+        case baseAttackMin = "base_attack_min"
+    }
+}
+

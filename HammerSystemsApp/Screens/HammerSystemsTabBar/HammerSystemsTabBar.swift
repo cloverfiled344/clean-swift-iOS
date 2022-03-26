@@ -20,7 +20,8 @@ class HammerSystemsTabBar: UITabBarController {
     private func makeTabBars() {
         viewControllers = [
             makeMenuViewController(),
-            makeToDoListViewController()
+            makeToDoListViewController(),
+            makeTestViewController()
         ]
     }
     
@@ -33,6 +34,12 @@ class HammerSystemsTabBar: UITabBarController {
     private func makeToDoListViewController() -> UINavigationController {
         let nav = UINavigationController(rootViewController: ToDoListViewController())
         nav.tabBarItem = UITabBarItem(title: "ToDoList", image: UIImage(named: "basket"), selectedImage: UIImage(named: "menucard.fill"))
+        return nav
+    }
+    
+    private func makeTestViewController() -> UINavigationController {
+        let nav = UINavigationController(rootViewController: TestViewController())
+        nav.tabBarItem = UITabBarItem(title: "TEST", image: UIImage(named: "menu"), selectedImage: UIImage(named: "menucard.fill"))
         return nav
     }
 }

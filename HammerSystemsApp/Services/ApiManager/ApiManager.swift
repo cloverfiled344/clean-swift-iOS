@@ -43,4 +43,22 @@ final class ApiManager {
             }
         }
     }
+    
+    func GETWithAsync(path: String, parameters: Parameters? = nil) async -> Result<[HeroWithAsync], Error> {
+        guard let url = URL(string: path) else {
+            return .failure(MyError.failToGet)
+        }
+        
+        do {
+            let (data, _ ) = try await URLSession.shared.data(from: url)
+            let heros = try JSONDecoder().decode([HeroWithAsync].self, from: data)
+            return .success(heros)
+        } catch {
+            return .failure(error)
+        }
+    }
+    
+    enum MyError: Error {
+        case failToGet
+    }
 }

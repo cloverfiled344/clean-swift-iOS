@@ -25,4 +25,18 @@ class HeroWorker {
             completion(HeroModels.Fetch.Response(heros: heroModels))
         }
     }
+    
+    
+//    func getAsyncHeroes() async -> HeroModelsAsync.Fetch.Response {
+//        
+//        let heroes = await apiManager.GETWithAsync(path: Constants.mainAPI + "/api/heroStats")
+//        switch heroes {
+//            
+//        case .success(let response):
+//            return HeroModelsAsync.Fetch.Response(heros: response)
+//        case .failure(let error):
+//            print(error.localizedDescription)
+//            return HeroModelsAsync.Fetch.Response(heros: [])
+//        }
+//    }
 }

@@ -24,3 +24,21 @@ struct HeroModels {
         }
     }
 }
+
+struct HeroModelsAsync {
+    
+    struct Fetch {
+        
+        struct Request {
+            
+        }
+        
+        struct Response {
+            var heros: [HeroWithAsync]
+        }
+        
+        struct ViewModel {
+            var heros: [HeroWithAsync]
+        }
+    }
+}

@@ -66,6 +66,7 @@
 		FA1270BB279F03A300D45FB4 /* TaskListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270BA279F03A300D45FB4 /* TaskListModel.swift */; };
 		FA1270BD27A00CE900D45FB4 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270BC27A00CE900D45FB4 /* ToDoListView.swift */; };
 		FA1270C027A00EC000D45FB4 /* ToDoListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1270BF27A00EC000D45FB4 /* ToDoListViewController+TableView.swift */; };
+		FA1905EA27CA5DF80036E9D2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1905E927CA5DF80036E9D2 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		FA1270BA279F03A300D45FB4 /* TaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListModel.swift; sourceTree = "<group>"; };
 		FA1270BC27A00CE900D45FB4 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		FA1270BF27A00EC000D45FB4 /* ToDoListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListViewController+TableView.swift"; sourceTree = "<group>"; };
+		FA1905E927CA5DF80036E9D2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +242,7 @@
 		FA126FB62789A3B300D45FB4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FA1905E827CA5DEE0036E9D2 /* Test */,
 				FA1270AF279EF58000D45FB4 /* HammerSystemsTabBar */,
 				FA1270B2279EFF0400D45FB4 /* ToDoList */,
 				FA12708B2799BAC300D45FB4 /* HeroDetail */,
@@ -462,6 +465,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FA1905E827CA5DEE0036E9D2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FA1905E927CA5DF80036E9D2 /* TestViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -618,6 +629,7 @@
 				FA12706E2799498600D45FB4 /* NetworkLogger.swift in Sources */,
 				FA126FE2278AC84000D45FB4 /* MenuBannerView.swift in Sources */,
 				FA126FEA278AFA3600D45FB4 /* TagCollectionCell.swift in Sources */,
+				FA1905EA27CA5DF80036E9D2 /* TestViewController.swift in Sources */,
 				FA1270612799383E00D45FB4 /* HeroView.swift in Sources */,
 				FA1270A3279C126E00D45FB4 /* HeroDetailModels.swift in Sources */,
 				FA1270AC279EEF6800D45FB4 /* UIApplication+Extension.swift in Sources */,
